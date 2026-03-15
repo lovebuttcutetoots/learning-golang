@@ -3,9 +3,12 @@ package main
 import "fmt"
 
 func checkAge(name string, age int) string {
-	if age >= 13 {
+	// note: go style prefers not using an else after return
+	if age < 13 {
 		return name + " is a child."
-	} else if age >= 17 {
+	}
+
+	if age <= 17 {
 		return name + " is a teenager."
 	}
 
