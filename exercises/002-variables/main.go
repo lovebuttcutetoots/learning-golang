@@ -12,7 +12,7 @@ func main() {
 		var learningGo bool = true
 	*/
 
-	//Short Declaration Syntax
+	// Short Declaration Syntax
 	name := "Brad"
 	age := 42
 	height := 5.10
