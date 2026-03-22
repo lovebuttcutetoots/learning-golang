@@ -16,15 +16,11 @@ func (p Person) Print() {
 }
 
 func (p Person) IsAdult() bool {
-	if p.Age >= 18 {
-		return true
-	}
-
-	return false
+	return p.Age >= 18
 }
 
 func (p Person) Greet() string {
-	return ("Hello, my name is Slim Shady. \n")
+	return "Hello, my name is " + p.Name + "."
 }
 
 func main() {
@@ -48,7 +44,7 @@ func main() {
 	for _, person := range people {
 		person.Print()
 		if person.IsAdult() {
-			fmt.Printf(person.Greet())
+			fmt.Println(person.Greet())
 		}
 	}
 }
