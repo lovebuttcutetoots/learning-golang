@@ -37,5 +37,5 @@ func main() {
 	fmt.Printf("After BirthdayPointer(): %d\n", person.Age)
 
 	person.SetAge(50)
-	fmt.Printf("Updated age: %d\n.", person.Age)
+	fmt.Printf("Updated age: %d.\n", person.Age)
 }
