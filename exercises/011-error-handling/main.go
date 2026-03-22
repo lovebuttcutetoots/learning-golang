@@ -16,7 +16,7 @@ func divide(a, b float64) (float64, error) {
 
 func sqrt(x float64) (float64, error) {
 	if x < 0 {
-		return 0, errors.New("cannot be less than zero")
+		return 0, errors.New("cannot square root negative numbers")
 	}
 
 	return math.Sqrt(x), nil
@@ -46,5 +46,9 @@ func main() {
 	}
 
 	result, err = sqrt(-16)
-
+	if err != nil {
+		fmt.Println("Error:", err)
+	} else {
+		fmt.Println("Result:", result)
+	}
 }
