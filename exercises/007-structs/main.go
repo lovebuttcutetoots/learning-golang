@@ -10,7 +10,7 @@ type Person struct {
 }
 
 func printPerson(p Person) {
-	fmt.Printf("%s is %d year old, lives in %sm, and works as a %s.\n", p.Name, p.Age, p.City, p.Occupation)
+	fmt.Printf("%s is %d years old, lives in %s, and works as a %s.\n", p.Name, p.Age, p.City, p.Occupation)
 }
 
 func main() {
